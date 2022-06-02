@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let A = new Array(2, 354, 45, 567, 123, 23, 65, 54, 97);
+        let maior_valor = A[0];
+        let menor_valor = A[0];
+        let indice_maior = 0;
+        let indice_menor = 0;
+
+        for(let i = 0; i < A.length; i++){
+            if(A[i] > maior_valor){
+                maior_valor = A[i];
+                indice_maior = 1
+            }
+        }
+        for(let i = 0; i < A.length; i++){
+            if(A[i] < menor_valor){
+                menor_valor = A[i];
+                indice_menor = 1
+            }
+        }
+        document.write("Array A : "+A);
+        document.write("<br>O maior valor é "+maior_valor + "e se encontra na posição "+indice_maior +"enquanto o menor valor é "+menor_valor + "e se encontra na posição "+indice_menor);
+
+
+
+    </script>
+</body>
+</html>

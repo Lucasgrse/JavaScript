@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let nome = prompt("Digite o nome do funcionário: ");
+        let idade = parseInt(prompt("Digita a idade: "));
+        let dependentes = parseInt(prompt("Digite a quantidade de dependentes: "));
+        let salario = parseFloat(prompt("Digite salário: "));
+        let salario_reajustado = 0;
+
+        if (idade > 55 && dependentes > 3) {
+            salario_reajustado = salario * 1.3;
+
+        } else if (idade >= 40 && idade <= 55 || dependentes > 1) {
+            salario_reajustado = salario * 1.25;
+
+        } else {
+            salario_reajustado = salario * 1.1;
+        }
+        document.write("O salário reajustado será de R$" + salario_reajustado);
+
+    </script>
+</body>
+
+</html>

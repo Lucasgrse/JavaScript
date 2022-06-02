@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //função para ordenação
+        function ordenar_Array(itens){
+            let tamanho_array = itens.length; //pega o tamanho
+            for( let i = 0; i < tamanho_array; i++){
+                for(let j = 0; j < tamanho_array; j++){
+                    if(itens[j] > itens[j + 1]){
+                        let aux = itens[j];
+                        itens[j] = itens[j + 1];
+                        itens[j + 1 ] = aux;
+                    }
+                }
+            }
+        }
+        //carega o array
+        let array = new Array(9, 4, 1, 8, 3, 5, 0, 2, 6);
+        console.log(array_valores); //exibe o array antes da ordenação
+
+//chama a função
+        ordenar_Array(array_valores);
+        console.log(array_valores);
+
+        let array2 = new Array(95, 43, 12, 86, 300, 534, 0, 22, 63);
+        console.log(array_valores2);
+        ordenar_Array(array_valores2);
+        console.log(array_valores2);
+    </script>
+</body>
+</html>l
